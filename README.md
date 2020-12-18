@@ -28,7 +28,7 @@ and for a secondary material in 2016:
 
 - Yifei Zeng, Abigail Hunter, Irene Jane Beyerlein, Marisol Koslowski, [A phase field dislocation dynamics model for a bicrystal interface system: An investigation into dislocation slip transmission across cube-on-cube interfaces](https://doi.org/10.1016/j.ijplas.2015.09.001), Int. J. Plast. 79 (2016) 293--313
 
-However, these work did not address issues (i), (iii), and (v).
+However, these two papers did not address issues (i), (iii), and (v).
 
 ## (iii)
 
@@ -40,7 +40,7 @@ Then in 2019, the lattice energy was advanced again such that it was based on th
 
 - Shuozhi Xu, Jaber R. Mianroodi, Abigail Hunter, Irene J. Beyerlein, Bob Svendsen, [Phase-field-based calculations of the disregistry fields of static extended dislocations in FCC metals](http://dx.doi.org/10.1080/14786435.2019.1582850), Philos. Mag. 99 (2019) 1400--1428
 
-The GSFE surface is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. For non-dissociated dislocations, e.g., those in BCC crystals and non-basal slips in HCP crystals, GSFE curves should be used. In early PFDD models, the GSFE curve was approximated by a 1D function. That changed in 2020:
+The GSFE surface is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. For non-dissociated dislocations, e.g., those in BCC crystals and on non-basal planes in HCP crystals, GSFE curves should be used. In early PFDD models, the GSFE curve was approximated by a 1D function. That changed in 2020:
 
 - Shuozhi Xu, Yanqing Su, Lauren T.W. Smith, Irene J. Beyerlein, [Frank-Read source operation in six body-centered cubic refractory metals](http://dx.doi.org/10.1016/j.jmps.2020.104017), J. Mech. Phys. Solids 141 (2020) 104017
 
@@ -58,9 +58,19 @@ In 2019, the gradient energy was added to the total energy in the PFDD model:
 
 - Shuozhi Xu, Lauren Smith, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [A comparison of different continuum approaches in modeling mixed-type dislocations in Al](http://dx.doi.org/10.1088/1361-651X/ab2d16), Modelling Simul. Mater. Sci. Eng. 27 (2019) 074004
 
-Similar to the GSFE surface, the gradient energy is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. Therefore, this feature is not used in BCC crystals or non-basal slips in HCP crystals.
+Similar to the GSFE surface, the gradient energy is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. Therefore, this feature is not used in BCC crystals or for non-basal slips in HCP crystals.
 
-## (iv)
+Note that introducing the gradient energy necessitates knowing the values of two independent gradient energy coefficients per slip plane in FCC crystals. In the paper above, the two coefficients were different. However, they may have the same value. The uniform coefficient was first used in the paper below, shortly after the preceding paper was published:  
+
+- Yanqing Su, Shuozhi Xu, Irene J. Beyerlein, [_Ab initio_-informed phase-field modeling of static dislocation core structures in equal-molar CoNiRu multi-principal element alloys](http://dx.doi.org/10.1088/1361-651X/ab3b62), Modelling Simul. Mater. Sci. Eng. 27 (2019) 084001
+
+The two types of gradient energy coefficients were compared later:
+
+- Shuozhi Xu, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [Comparative modeling of the disregistry and Peierls stress for dissociated edge and screw dislocations in Al](http://dx.doi.org/10.1016/j.ijplas.2020.102689), Int. J. Plast. 129 (2020) 102689
+
+which recommended that the non-uniform cofficients be used whenever possible.
+
+## (vi)
 
 Another line of advancement is to extend PFDD from FCC crystals to other types of crystals. Three advancements were made in 2020. First, PFDD was extended to {110} slips in BCC crystals:
 
@@ -75,3 +85,15 @@ Soon after, PFDD was extended to {112} and {123} slips in BCC crystals:
 PFDD was also extended to HCP crystals, for slips on basal, prismatic, and pyramidal-II planes:
 
 - C. Albrecht, A. Hunter, A. Kumar, I.J. Beyerlein, [A phase field model for dislocations in hexagonal close packed crystals](https://doi.org/10.1016/j.jmps.2019.103823), J. Mech. Phys. Solids 137 (2020) 103823
+
+By Dec 2020, the PFDD model had not been used to study slips on pyramidal-I planes in HCP crystals, but doing so should be straightforward given the similarity between pyramidal-I and pyramidal-II slips.
+
+## Note
+
+Recent (as of Dec 2020) PFDD work combined several features mentioned above, e.g.,
+
+- Lauren T.W. Smith, Yanqing Su, Shuozhi Xu, Abigail Hunter, Irene J. Beyerlein, [The effect of local chemical ordering on Frank-Read source activation in a refractory multi-principal element alloy](http://dx.doi.org/10.1016/j.ijplas.2020.102850), Int. J. Plast. 134 (2020) 102850
+
+which used features (i), (iv), and (vi).
+
+I expect that future PFDD work will always use features (i) and (iii), and may use other features as well, depending on the specific slip systems and material systems.
