@@ -1,12 +1,18 @@
 # PFDD
 
-In the phase-field dislocation dynamics (PFDD) model, each phase corresponds to a "state of slip". Individual dislocations are thus phase boundaries whose configurations are determined by minimizing the total system energy, which in its most general form contains the elastic energy, the lattice energy, and the gradient energy.
+In the phase-field dislocation model, each phase corresponds to a "state of slip". Individual dislocations are thus phase boundaries whose configurations are determined by minimizing the total system energy, which in its most general form contains the elastic energy, the lattice energy, the gradient energy, and the external energy.
+
+There are many phase-field dislocation models, e.g., the [phase-field microelasticity](https://doi.org/10.1016/S1359-6454(01)00075-1) model and the [microscopic phase-field](https://doi.org/10.1016/j.actamat.2014.03.065) model. Below you will find a brief, historial overview of the phase-field dislocation dynamics (PFDD) model. In the current context, the name "PFDD" refers to a specifc model first developed by [Marisol Koslowski](https://scholar.google.com/citations?user=YKqLEyEAAAAJ&hl=en) and her students, postdocs, and colleagues. Note that (i) early PFDD papers did not use the name "PFDD", but they were considered to use the PFDD model, retrospectively, and (ii) some papers used the name "PFDD" for their models, but they were authored/co-authored by other groups, e.g., [Pi et al.](https://doi.org/10.1016/j.actamat.2017.04.019) Papers in the second case are not included in this overview.
 
 Here is the very first PFDD paper:
 
 - M. Koslowski, A.M. Cuiti&#241;o, M. Ortiz, [A phase-field theory of dislocation dynamics, strain hardening and hysteresis in ductile single crystals](https://doi.org/10.1016/S0022-5096(02)00037-6), J. Mech. Phys. Solids 50 (2002) 2597--2635
 
-in which (i) the isotropic elasticity was assumed, (ii) the elastic tensor was assumed the same everywhere, (iii) the lattice energy was based on a simple 1D function, (iv) the lattice energy was assumed the same everywhere, (v) the gradient energy was omitted, (vi) the model was for FCC crystals only, and (vii) slips were not confined to pre-defined slip planes. These seven issues were addressed in the subsequent years.
+in which (i) the isotropic elasticity was assumed, (ii) the elastic tensor was assumed the same everywhere, (iii) the lattice energy was based on a simple 1D function, (iv) the lattice energy was assumed the same everywhere, (v) the gradient energy was omitted, (vi) the external energy invovled the stress-controlled loading only, (vii) the model was for FCC crystals only, and (viii) no numerical grid was used. These eight issues were addressed in the subsequent years.
+
+As mentioned, the first PFDD paper did not use the name PFDD. The first paper that used the name PFDD was
+
+- Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865-878
 
 ## (i)
 
@@ -60,9 +66,13 @@ In 2019, the gradient energy was added to the total energy in the PFDD model:
 
 - Shuozhi Xu, Lauren Smith, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [A comparison of different continuum approaches in modeling mixed-type dislocations in Al](http://dx.doi.org/10.1088/1361-651X/ab2d16), Modelling Simul. Mater. Sci. Eng. 27 (2019) 074004
 
-Similar to the GSFE surface, the gradient energy is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. Therefore, this feature is not used in BCC crystals or for non-basal slips in HCP crystals.
+Similar to the GSFE surface, the gradient energy is intended for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. Therefore, this feature is not used in BCC crystals or for non-basal slips in HCP crystals.
 
-Note that introducing the gradient energy necessitates knowing the values of two independent gradient energy coefficients per slip plane in FCC crystals. In the paper above, the two coefficients were different. However, they may have the same value. The uniform coefficient was first used in the paper below, shortly after the preceding paper was published:  
+Note that including the gradient energy in the total energy is not necessarily desirable in all FCC crystals. In some FCC crystals, it may be better not to include it. An analysis was conducted in:
+
+- Shuozhi Xu, Yanqing Su, Irene J. Beyerlein, [Modeling dislocations with arbitrary character angle in face-centered cubic transition metals using the phase-field dislocation dynamics method with full anisotropic elasticity](http://dx.doi.org/10.1016/j.mechmat.2019.103200), Mech. Mater. 139 (2019) 103200
+
+In any case, if one decided to include the gradient energy, the formulation would ask for the values of two independent gradient energy coefficients per slip plane in FCC crystals. In [Xu et al. MSMSE (2019)](http://dx.doi.org/10.1088/1361-651X/ab2d16), the two coefficients were different. However, they may have the same value. The uniform coefficient was first used in the paper below, shortly after the preceding MSMSE paper was published:  
 
 - Yanqing Su, Shuozhi Xu, Irene J. Beyerlein, [_Ab initio_-informed phase-field modeling of static dislocation core structures in equal-molar CoNiRu multi-principal element alloys](http://dx.doi.org/10.1088/1361-651X/ab3b62), Modelling Simul. Mater. Sci. Eng. 27 (2019) 084001
 
@@ -73,6 +83,12 @@ The two types of gradient energy coefficients were compared later:
 which recommended that the non-uniform cofficients be used whenever possible.
 
 ## (vi)
+
+In 2015, the strain-controlled loading was implemented into PFDD:
+
+- Lei Cao, Abigail Hunter, Irene J. Beyerlein, Marisol Koslowski, [The role of partial mediated slip during quasi-static deformation of 3D nanocrystalline metals](https://doi.org/10.1016/j.jmps.2015.02.019), J. Mech. Phys. Solids 78 (2015) 415--426
+
+## (vii)
 
 Another line of advancement is to extend PFDD from FCC crystals to other types of crystals. Three advancements were made in 2020. First, PFDD was extended to {110} slips in BCC crystals:
 
@@ -90,7 +106,17 @@ PFDD was also extended to HCP crystals, for slips on basal, prismatic, and pyram
 
 By Dec 2020, the PFDD model had not been used to study slips on pyramidal-I planes in HCP crystals, but doing so should be straightforward given the similarity between pyramidal-I and pyramidal-II slips.
 
-## (vii)
+## (viii)
+
+In 2004, 2D numerical grids were introduced to PFDD:
+
+- M. Koslowski, M. Ortiz, [A multi-phase field model of planar dislocation networks](https://doi.org/10.1088/0965-0393/12/6/003), Modelling Simul. Mater. Sci. Eng 12 (2004) 1087
+
+Then in 2011, 3D numerical grids were used:
+
+- Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865-878
+
+However, in 3D grids, slips were not confined to pre-defined slip planes. 
 
 The first paper in which all slips were confined to pre-defined slip planes in PFDD was published in 2019:
 
@@ -108,6 +134,6 @@ Recent (as of Dec 2020) PFDD work combined several features mentioned above, e.g
 
 - Lauren T.W. Smith, Yanqing Su, Shuozhi Xu, Abigail Hunter, Irene J. Beyerlein, [The effect of local chemical ordering on Frank-Read source activation in a refractory multi-principal element alloy](http://dx.doi.org/10.1016/j.ijplas.2020.102850), Int. J. Plast. 134 (2020) 102850
 
-which used features (i), (iv), (vi), and (vii).
+which used features (i), (iv), (vii), and (viii).
 
-To sum up, it is always a good idea to use features (i), (iii), and (vii) in any PFDD work; whether other features are used depends on the specific slip systems and material systems.
+To sum up, it is always a good idea to use features (i) and (viii) in any PFDD work. Feature (iii) is highly recommended unless in the case of intensive high-throughput computing. Whether other features are used depends on the specific slip systems and material systems.
