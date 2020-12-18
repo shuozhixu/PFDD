@@ -136,4 +136,4 @@ Recent (as of Dec 2020) PFDD work combined several features mentioned above, e.g
 
 which used features (i), (iv), (vii), and (viii).
 
-To sum up, it is always a good idea to use features (i) and (viii) in any PFDD work. Feature (iii) is highly recommended unless in the case of intensive high-throughput computing. Whether other features are used depends on the specific slip systems and material systems.
+To sum up, it is always a good idea to use features (i) and (viii) in any PFDD work. Feature (iii) is highly recommended unless in the case of intensive high-throughput computing. Whether other features are used depends on the specific slip systems, material systems, and/or loading conditions.
