@@ -14,7 +14,7 @@ Anisotropic elasticity was first implemented into PFDD in 2019:
 
 - Shuozhi Xu, Lauren Smith, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [A comparison of different continuum approaches in modeling mixed-type dislocations in Al](http://dx.doi.org/10.1088/1361-651X/ab2d16), Modelling Simul. Mater. Sci. Eng. 27 (2019) 074004
 
-and the differences between isotropic and anisotropic elasticity were systematically demonstrated in a later paper in the same year:
+Later that year, details in the formulation of anisotropic elasticity were presented:
 
 - Shuozhi Xu, Yanqing Su, Irene J. Beyerlein, [Modeling dislocations with arbitrary character angle in face-centered cubic transition metals using the phase-field dislocation dynamics method with full anisotropic elasticity](http://dx.doi.org/10.1016/j.mechmat.2019.103200), Mech. Mater. 139 (2019) 103200
 
@@ -36,15 +36,15 @@ In 2011, the lattice energy formulation was advanced such that it was based on a
 
 - A. Hunter, I.J. Beyerlein, T.C. Germann, M. Koslowski, [Influence of the stacking fault energy surface on partial dislocations in fcc metals with a three-dimensional phase field dislocations dynamics model](https://doi.org/10.1103/PhysRevB.84.144108), Phys. Rev. B 84 (2001) 144108
 
-Then in 2019, the lattice energy was advanced again such that it was directly based on the GSFE surface without any help of any function:
+Then in 2019, the lattice energy was advanced again such that it was based on the GSFE surface that was entirely informed by atomic-level calculations without using any function:
 
 - Shuozhi Xu, Jaber R. Mianroodi, Abigail Hunter, Irene J. Beyerlein, Bob Svendsen, [Phase-field-based calculations of the disregistry fields of static extended dislocations in FCC metals](http://dx.doi.org/10.1080/14786435.2019.1582850), Philos. Mag. 99 (2019) 1400--1428
 
-The GSFE surface is used only for FCC crystals and for basal slips in HCP crystals. For BCC crystals and non-basal slips in HCP crystals, GSFE curves should be used. In early PFDD models, the GSFE curve was approximated by a 1D function. That changed in 2020:
+The GSFE surface is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. For non-dissociated dislocations, e.g., those in BCC crystals and non-basal slips in HCP crystals, GSFE curves should be used. In early PFDD models, the GSFE curve was approximated by a 1D function. That changed in 2020:
 
 - Shuozhi Xu, Yanqing Su, Lauren T.W. Smith, Irene J. Beyerlein, [Frank-Read source operation in six body-centered cubic refractory metals](http://dx.doi.org/10.1016/j.jmps.2020.104017), J. Mech. Phys. Solids 141 (2020) 104017
 
-in which the GSFE curve was used directly without any help of any function.
+in which the GSFE curve was informed entirely by atomic-level calculations without using any function.
 
 ## (iv)
 
@@ -58,9 +58,11 @@ In 2019, the gradient energy was added to the total energy in the PFDD model:
 
 - Shuozhi Xu, Lauren Smith, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [A comparison of different continuum approaches in modeling mixed-type dislocations in Al](http://dx.doi.org/10.1088/1361-651X/ab2d16), Modelling Simul. Mater. Sci. Eng. 27 (2019) 074004
 
+Similar to the GSFE surface, the gradient energy is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. Therefore, this feature is not used in BCC crystals or non-basal slips in HCP crystals.
+
 ## (iv)
 
-Another line of advancement is to extend PFDD from FCC crystals to other crystals. Three advancements were made in 2020. First, PFDD was extended to {110} slips in BCC crystals:
+Another line of advancement is to extend PFDD from FCC crystals to other types of crystals. Three advancements were made in 2020. First, PFDD was extended to {110} slips in BCC crystals:
 
 - Xiaoyao Peng, Nithin Mathew, Irene J. Beyerlein, Kaushik Dayal, Abigail Hunter, [A 3D phase field dislocation dynamics model for body-centered cubic crystals](https://doi.org/10.1016/j.commatsci.2019.109217), Comput. Mater. Sci. 171 (2020) 109217
 
