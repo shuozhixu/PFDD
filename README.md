@@ -2,7 +2,7 @@
 
 In the phase-field dislocation model, each phase corresponds to a "state of slip". Individual dislocations are thus phase boundaries whose configurations are determined by minimizing the total system energy, which in its most general form contains the elastic energy, the lattice energy, the gradient energy, and the external energy.
 
-There are many phase-field dislocation models, e.g., the [phase-field microelasticity](https://doi.org/10.1016/S1359-6454(01)00075-1) model and the [microscopic phase-field](https://doi.org/10.1016/j.actamat.2014.03.065) model. Below you will find a brief, historial overview of the phase-field dislocation dynamics (PFDD) model. In the current context, the name "PFDD" refers to a specifc model first developed by [Marisol Koslowski](https://scholar.google.com/citations?user=YKqLEyEAAAAJ&hl=en) and later advanced by her students, postdocs, and colleagues. Note that (i) early PFDD papers did not use the name "PFDD", but they were considered to use the PFDD model, retrospectively, and (ii) some papers used the name "PFDD" for their models, but they were authored/co-authored by other groups, e.g., [Pi et al.](https://doi.org/10.1016/j.actamat.2017.04.019) Papers in the second case are not included in this overview.
+There are many phase-field dislocation models, e.g., the [phase-field microelasticity](https://doi.org/10.1016/S1359-6454(01)00075-1) model and the [microscopic phase-field](https://doi.org/10.1016/j.actamat.2014.03.065) model. Below you will find a brief, historial overview of the phase-field dislocation dynamics (PFDD) model. In the current context, the name "PFDD" refers to a specifc model first developed by [Marisol Koslowski](https://scholar.google.com/citations?user=YKqLEyEAAAAJ&hl=en) and later advanced by her students, postdocs, and colleagues. Note that (i) early PFDD papers did not use the name "PFDD", but they were considered to use the PFDD model, retrospectively, and (ii) some papers used the name "PFDD" for their models, but they were authored/co-authored by other groups, e.g., [Pi et al.](https://doi.org/10.1016/j.actamat.2017.04.019) Papers in the second category are not included in this overview.
 
 Here is the very first PFDD paper:
 
@@ -68,11 +68,11 @@ In 2019, the gradient energy was added to the total energy in the PFDD model:
 
 Similar to the GSFE surface, the gradient energy is intended for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. Therefore, this feature is not used in BCC crystals or for non-basal slips in HCP crystals.
 
-Note that including the gradient energy in the total energy is not necessarily desirable in all FCC crystals. In some FCC crystals, it may be better not to include it. An analysis was conducted in:
+Note that including the gradient energy in the total energy is not necessarily desirable in all FCC crystals. In some FCC crystals, it may be better not to include it. An analysis of edge and screw dislocations in eight FCC crystals was conducted in:
 
 - Shuozhi Xu, Yanqing Su, Irene J. Beyerlein, [Modeling dislocations with arbitrary character angle in face-centered cubic transition metals using the phase-field dislocation dynamics method with full anisotropic elasticity](http://dx.doi.org/10.1016/j.mechmat.2019.103200), Mech. Mater. 139 (2019) 103200
 
-In any case, if one decided to include the gradient energy, the formulation would ask for the values of two independent gradient energy coefficients per slip plane in FCC crystals. In [Xu et al. MSMSE (2019)](http://dx.doi.org/10.1088/1361-651X/ab2d16), the two coefficients were different. However, they may have the same value. The uniform coefficient was first used in the paper below, shortly after the preceding MSMSE paper was published:  
+In any case, if one decided to include the gradient energy, the formulation would ask for the values of two independent gradient energy coefficients per slip plane in an FCC crystal. In [Xu et al. MSMSE (2019)](http://dx.doi.org/10.1088/1361-651X/ab2d16), the two coefficients were different. However, they may have the same value. The uniform coefficient was first used in the paper below, shortly after the preceding MSMSE paper was published:  
 
 - Yanqing Su, Shuozhi Xu, Irene J. Beyerlein, [_Ab initio_-informed phase-field modeling of static dislocation core structures in equal-molar CoNiRu multi-principal element alloys](http://dx.doi.org/10.1088/1361-651X/ab3b62), Modelling Simul. Mater. Sci. Eng. 27 (2019) 084001
 
@@ -127,6 +127,8 @@ Later, effects of the confinement were studied in:
 - Shuozhi Xu, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [Comparative modeling of the disregistry and Peierls stress for dissociated edge and screw dislocations in Al](http://dx.doi.org/10.1016/j.ijplas.2020.102689), Int. J. Plast. 129 (2020) 102689
 
 which recommended that the confinement be used whenever possible.
+
+One may wonder: woundn't the confinement reduce a 3D model to a 2D model? This is indeed the case if only one slip plane is involved in the system. However, the 3D model, even confined, can be used for multiple slip planes, which can be either parallel or non-parallel. Clearly the 3D model is advantageous to the 2D model which cannot simulate multiple slip planes.
 
 ## Note
 
