@@ -6,7 +6,7 @@ Here is the very first PFDD paper:
 
 - M. Koslowski, A.M. Cuiti&#241;o, M. Ortiz, [A phase-field theory of dislocation dynamics, strain hardening and hysteresis in ductile single crystals](https://doi.org/10.1016/S0022-5096(02)00037-6), J. Mech. Phys. Solids 50 (2002) 2597--2635
 
-in which (i) the isotropic elasticity was assumed, (ii) the elastic tensor was assumed the same everywhere, (iii) the lattice energy was based on a simple 1D function, (iv) the lattice energy was assumed the same everywhere, (v) the gradient energy was omitted and (vi) the model was for FCC crystals only. These six issues were addressed in the subsequent years.
+in which (i) the isotropic elasticity was assumed, (ii) the elastic tensor was assumed the same everywhere, (iii) the lattice energy was based on a simple 1D function, (iv) the lattice energy was assumed the same everywhere, (v) the gradient energy was omitted, (vi) the model was for FCC crystals only, and (vii) slips were not confined to pre-defined slip planes. These seven issues were addressed in the subsequent years.
 
 ## (i)
 
@@ -39,6 +39,8 @@ In 2011, the lattice energy formulation was advanced such that it was based on a
 Then in 2019, the lattice energy was advanced again such that it was based on the GSFE surface that was entirely informed by atomic-level calculations without using any function:
 
 - Shuozhi Xu, Jaber R. Mianroodi, Abigail Hunter, Irene J. Beyerlein, Bob Svendsen, [Phase-field-based calculations of the disregistry fields of static extended dislocations in FCC metals](http://dx.doi.org/10.1080/14786435.2019.1582850), Philos. Mag. 99 (2019) 1400--1428
+
+In the paper above, effects of the two GSFE surfaces were studied and it was recommended that the one not using a function is more desirable.
 
 The GSFE surface is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. For non-dissociated dislocations, e.g., those in BCC crystals and on non-basal planes in HCP crystals, GSFE curves should be used. In early PFDD models, the GSFE curve was approximated by a 1D function. That changed in 2020:
 
@@ -88,12 +90,24 @@ PFDD was also extended to HCP crystals, for slips on basal, prismatic, and pyram
 
 By Dec 2020, the PFDD model had not been used to study slips on pyramidal-I planes in HCP crystals, but doing so should be straightforward given the similarity between pyramidal-I and pyramidal-II slips.
 
+## (vii)
+
+The first paper in which all slips were confined to pre-defined slip planes in PFDD was published in 2019:
+
+- Shuozhi Xu, Lauren Smith, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [A comparison of different continuum approaches in modeling mixed-type dislocations in Al](http://dx.doi.org/10.1088/1361-651X/ab2d16), Modelling Simul. Mater. Sci. Eng. 27 (2019) 074004
+
+Later, effects of the confinement were studied in:
+
+- Shuozhi Xu, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [Comparative modeling of the disregistry and Peierls stress for dissociated edge and screw dislocations in Al](http://dx.doi.org/10.1016/j.ijplas.2020.102689), Int. J. Plast. 129 (2020) 102689
+
+which recommended that the confinement be used whenever possible.
+
 ## Note
 
 Recent (as of Dec 2020) PFDD work combined several features mentioned above, e.g.,
 
 - Lauren T.W. Smith, Yanqing Su, Shuozhi Xu, Abigail Hunter, Irene J. Beyerlein, [The effect of local chemical ordering on Frank-Read source activation in a refractory multi-principal element alloy](http://dx.doi.org/10.1016/j.ijplas.2020.102850), Int. J. Plast. 134 (2020) 102850
 
-which used features (i), (iv), and (vi).
+which used features (i), (iv), (vi), and (vii).
 
-I expect that future PFDD work will always use features (i) and (iii), and may use other features as well, depending on the specific slip systems and material systems.
+To sum up, it is always a good idea to use features (i), (iii), and (vii) in any PFDD work; whether other features are used depends on the specific slip systems and material systems.
