@@ -132,7 +132,7 @@ Later, effects of the confinement were studied in:
 
 which recommended that the confinement be used whenever possible.
 
-One may wonder: woundn't the confinement reduce a 3D model to a 2D model? This is indeed the case if only one slip plane is involved in the system. However, the 3D model, even confined, can be used for multiple slip planes, which can be either parallel or non-parallel. Clearly the 3D model is advantageous to the 2D model which cannot simulate multiple slip planes.
+One may wonder: woundn't the confinement reduce a 3D model to a 2D model? This is indeed the case for a 2D problem, i.e., when only one slip plane is involved in the system. However, the 3D model, even confined, can be used for a 3D problem, i.e., when multiple slip planes, which can be either parallel or non-parallel, are involved. Clearly the 3D model is advantageous to the 2D model which cannot simulate a 3D problem.
 
 ## Note
 
