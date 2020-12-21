@@ -12,7 +12,7 @@ in which (i) the isotropic elasticity was assumed, (ii) the elastic tensor was a
 
 As mentioned, the first PFDD paper did not use the name PFDD. The first paper that used the name PFDD was
 
-- Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865-878
+- Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865--878
 
 ## (i)
 
@@ -114,7 +114,7 @@ In 2004, 2D numerical grids were introduced to PFDD:
 
 Then in 2011, 3D numerical grids were used:
 
-- Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865-878
+- Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865--878
 
 which, however, studied a 2D problem. The first paper that used a 3D grid to study a 3D problem was:
 
