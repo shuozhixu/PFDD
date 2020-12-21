@@ -118,7 +118,7 @@ Then in 2011, 3D numerical grids were used:
 
 which, however, studied a 2D problem. The first paper that used a 3D grid to study a 3D problem was:
 
-A. Hunter, I.J. Beyerlein, [Stacking fault emission from grain boundaries: material dependencies and grain size effects](https://doi.org/10.1016/j.msea.2014.02.030), Mater. Sci. Eng.: A 600 (2014) 200--210
+- A. Hunter, I.J. Beyerlein, [Stacking fault emission from grain boundaries: material dependencies and grain size effects](https://doi.org/10.1016/j.msea.2014.02.030), Mater. Sci. Eng.: A 600 (2014) 200--210
 
 In many cases, slips were not confined to pre-defined slip planes in a 3D grid. 
 
