@@ -34,7 +34,7 @@ and for a secondary material in 2016:
 
 - Yifei Zeng, Abigail Hunter, Irene Jane Beyerlein, Marisol Koslowski, [A phase field dislocation dynamics model for a bicrystal interface system: An investigation into dislocation slip transmission across cube-on-cube interfaces](https://doi.org/10.1016/j.ijplas.2015.09.001), Int. J. Plast. 79 (2016) 293--313
 
-However, these two papers did not address issues (i), (iii), and (v). Results would have been better if they did.
+However, these two papers did not address issues (i), (iii), and (v). Results should have been better if they did.
 
 ## (iii)
 
@@ -116,7 +116,11 @@ Then in 2011, 3D numerical grids were used:
 
 - Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865-878
 
-However, in 3D grids, slips were not confined to pre-defined slip planes. 
+which, however, studied a 2D problem. The first paper that used a 3D grid to study a 3D problem was:
+
+A. Hunter, I.J. Beyerlein, [Stacking fault emission from grain boundaries: material dependencies and grain size effects](https://doi.org/10.1016/j.msea.2014.02.030), Mater. Sci. Eng.: A 600 (2014) 200--210
+
+In many cases, slips were not confined to pre-defined slip planes in a 3D grid. 
 
 The first paper in which all slips were confined to pre-defined slip planes in PFDD was published in 2019:
 
