@@ -110,7 +110,7 @@ By Dec 2020, the PFDD model had not been used to study slips on pyramidal-I plan
 
 In 2004, 2D numerical grids were introduced to PFDD:
 
-- M. Koslowski, M. Ortiz, [A multi-phase field model of planar dislocation networks](https://doi.org/10.1088/0965-0393/12/6/003), Modelling Simul. Mater. Sci. Eng 12 (2004) 1087
+- M. Koslowski, M. Ortiz, [A multi-phase field model of planar dislocation networks](https://doi.org/10.1088/0965-0393/12/6/003), Modelling Simul. Mater. Sci. Eng 12 (2004) 1087--1097
 
 Then in 2011, 3D numerical grids were used:
 
