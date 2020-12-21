@@ -34,7 +34,7 @@ and for a secondary material in 2016:
 
 - Yifei Zeng, Abigail Hunter, Irene Jane Beyerlein, Marisol Koslowski, [A phase field dislocation dynamics model for a bicrystal interface system: An investigation into dislocation slip transmission across cube-on-cube interfaces](https://doi.org/10.1016/j.ijplas.2015.09.001), Int. J. Plast. 79 (2016) 293--313
 
-However, these two papers did not address issues (i), (iii), and (v). Results should have been better if they did.
+However, these two papers did not address issues (i), (iii), and (v). Results would have been better if they did.
 
 ## (iii)
 
