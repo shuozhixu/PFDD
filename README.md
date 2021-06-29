@@ -66,7 +66,11 @@ In 2019, the gradient energy was added to the total energy in the PFDD model:
 
 - Shuozhi Xu, Lauren Smith, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [A comparison of different continuum approaches in modeling mixed-type dislocations in Al](http://dx.doi.org/10.1088/1361-651X/ab2d16), Modelling Simul. Mater. Sci. Eng. 27 (2019) 074004
 
-Similar to the GSFE surface, the gradient energy is intended for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. Therefore, this feature is not used in BCC crystals or for non-basal slips in HCP crystals.
+Similar to the GSFE surface, the gradient energy is intended for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals.
+
+In general, this feature is not used in BCC crystals or for non-basal slips in HCP crystals. However, it may result in a match between the PFDD-based dislocation core width and the atomistic-based one, e.g., in BCC Ta and BCC Fe:
+
+- Hyojung Kim, Nithin Mathew, Darby J. Luscher, Abigail Hunter, [Phase field dislocation dynamics (PFDD) modeling of non-Schmid behavior in BCC metals informed by atomistic simulations](http://dx.doi.org/10.1016/j.jmps.2021.104460), J. Mech. Phys. Solids 152 (2021) 104460
 
 Note that including the gradient energy in the total energy is not necessarily desirable in all FCC crystals. In some FCC crystals, it may be better not to include it. An analysis of edge and screw dislocations in eight FCC crystals was conducted in:
 
