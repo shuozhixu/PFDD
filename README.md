@@ -112,11 +112,11 @@ By Dec 2020, the PFDD model had not been used to study slips on pyramidal-I plan
 
 ## (viii)
 
-In 2004, 2D numerical grids were introduced to PFDD:
+In 2004, 2D orthogonal numerical grids were introduced to PFDD:
 
 - M. Koslowski, M. Ortiz, [A multi-phase field model of planar dislocation networks](https://doi.org/10.1088/0965-0393/12/6/003), Modelling Simul. Mater. Sci. Eng 12 (2004) 1087--1097
 
-Then in 2011, 3D numerical grids were used:
+Then in 2011, 3D orthogonal numerical grids were used:
 
 - Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865--878
 
@@ -137,6 +137,10 @@ Later, effects of the confinement were studied in:
 which recommended that the confinement be used whenever possible.
 
 One may wonder: wouldn't the confinement reduce a 3D model to a 2D model? This is indeed the case for a 2D problem, i.e., when only one slip plane is involved in the system. However, the 3D model, even confined, can be used for a 3D problem, i.e., when multiple slip planes, either parallel or non-parallel, are involved. Clearly, the 3D model is advantageous to the 2D model which cannot simulate a 3D problem.
+
+In 2021, 3D non-orthogonal numerical grids were developed for FCC and BCC crystals:
+
+- Xiaoyao Peng, Abigail Hunter, Irene J. Beyerlein, Ricardo A. Lebensohn, Kaushik Dayal, Enrique Martinez, [Non-orthogonal computational grids for studying dislocation motion in phase field approaches](https://doi.org/10.1016/j.commatsci.2021.110834), Comput. Mater. Sci. 200 (2021) 110834
 
 ## Note
 
