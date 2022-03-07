@@ -34,7 +34,9 @@ and for a secondary material in 2016:
 
 - Yifei Zeng, Abigail Hunter, Irene Jane Beyerlein, Marisol Koslowski, [A phase field dislocation dynamics model for a bicrystal interface system: An investigation into dislocation slip transmission across cube-on-cube interfaces](https://doi.org/10.1016/j.ijplas.2015.09.001), Int. J. Plast. 79 (2016) 293--313
 
-Note that these two papers did not address issues (i), (iii), or (v).
+Note that the two papers above did not address issues (i), (iii), or (v). In 2022, issues (i), (ii), and (iii) were addressed in the same model:
+
+- Shuozhi Xu, Justin Y. Cheng, Zezhou Li, Nathan A. Mara, Irene J. Beyerlein, [Phase-field modeling of the interactions between an edge dislocation and an array of obstacles](https://doi.org/10.1016/j.cma.2021.114426), Comput. Methods Appl. Mech. Eng. 389 (2022) 114426
 
 ## (iii)
 
@@ -56,9 +58,19 @@ in which the GSFE curve was informed entirely by atomic-level calculations witho
 
 ## (iv)
 
-In materials such as multi-principal element alloys, [the GSFE is not spatially uniform](http://dx.doi.org/10.1016/j.intermet.2020.106844). As a result, the lattice energy cannot be the same everywhere. This feature was added to PFDD in 2019:
+In materials such as multi-principal element alloys, [the GSFE is not spatially uniform](http://dx.doi.org/10.1016/j.intermet.2020.106844). As a result, the lattice energy cannot be the same everywhere. The feature of spatially varying lattice energy was added to PFDD in 2019:
 
 - Yifei Zeng, Xiaorong Cai, Marisol Koslowski, [Effects of the stacking fault energy fluctuations on the strengthening of alloys](https://doi.org/10.1016/j.actamat.2018.09.066), Acta Mater. 164 (2019) 1--11
+
+The spatial variation in the lattice energy inevitably generated a large amount of data, leading to difficulties in relating the inputs and outputs analytically yet providing an opportunity to use machine learning:
+
+- Pau Cutrina Vilalta, Somayyeh Sheikholeslami, Katerine Saleme Ruiz, Xin C. Yee, Marisol Koslowski, [Machine learniing for predicting the critical yield stress of high entropy alloys](https://doi.org/10.1115/1.4048873), J. Eng. Mater. Tech. 143 (2021) 021005
+
+In 2020, the feature of character angle-dependent lattice energy was added to PFDD, for BCC metals:
+
+- Xiaoyao Peng, Nithin Mathew, Irene J. Beyerlein, Kaushik Dayal, Abigail Hunter, [A 3D phase field dislocation dynamics model for body-centered cubic crystals](https://doi.org/10.1016/j.commatsci.2019.109217), Comput. Mater. Sci. 171 (2020) 109217
+
+The rational was that the Peierls stress differs greatly between edge and screw dislocations in BCC metals.
 
 ## (v)
 
@@ -66,9 +78,7 @@ In 2019, the gradient energy was added to the total energy in the PFDD model:
 
 - Shuozhi Xu, Lauren Smith, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [A comparison of different continuum approaches in modeling mixed-type dislocations in Al](http://dx.doi.org/10.1088/1361-651X/ab2d16), Modelling Simul. Mater. Sci. Eng. 27 (2019) 074004
 
-Similar to the GSFE surface, the gradient energy is intended for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals.
-
-In general, this feature is not used in BCC crystals or for non-basal slips in HCP crystals. However, it may result in a match between the PFDD-based dislocation core width and the atomistic-based one, e.g., in BCC Ta and BCC Fe:
+Originally the gradient energy was intended only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. Later, it was found that inlcuding the gradient energy may result in a match between the PFDD-based dislocation core width and the atomistic-based one in BCC metals:
 
 - Hyojung Kim, Nithin Mathew, Darby J. Luscher, Abigail Hunter, [Phase field dislocation dynamics (PFDD) modeling of non-Schmid behavior in BCC metals informed by atomistic simulations](http://dx.doi.org/10.1016/j.jmps.2021.104460), J. Mech. Phys. Solids 152 (2021) 104460
 
@@ -80,7 +90,7 @@ In any case, if one decided to include the gradient energy, the formulation woul
 
 - Yanqing Su, Shuozhi Xu, Irene J. Beyerlein, [_Ab initio_-informed phase-field modeling of static dislocation core structures in equal-molar CoNiRu multi-principal element alloys](http://dx.doi.org/10.1088/1361-651X/ab3b62), Modelling Simul. Mater. Sci. Eng. 27 (2019) 084001
 
-The two types of gradient energy coefficients were compared later in:
+The two types of gradient energy coefficients, i.e., non-uniform and uniform, were compared later in:
 
 - Shuozhi Xu, Jaber R. Mianroodi, Abigail Hunter, Bob Svendsen, Irene J. Beyerlein, [Comparative modeling of the disregistry and Peierls stress for dissociated edge and screw dislocations in Al](http://dx.doi.org/10.1016/j.ijplas.2020.102689), Int. J. Plast. 129 (2020) 102689
 
@@ -98,17 +108,15 @@ Another line of advancement is to extend PFDD from FCC crystals to other types o
 
 - Xiaoyao Peng, Nithin Mathew, Irene J. Beyerlein, Kaushik Dayal, Abigail Hunter, [A 3D phase field dislocation dynamics model for body-centered cubic crystals](https://doi.org/10.1016/j.commatsci.2019.109217), Comput. Mater. Sci. 171 (2020) 109217
 
-in which the lattice energy also depended on the dislocation character angle, to take into account the difference in the glide resistance among dislocations with different character angles.
-
 Soon after, PFDD was extended to {112} and {123} slips in BCC crystals:
 
 - Shuozhi Xu, Yanqing Su, Lauren T.W. Smith, Irene J. Beyerlein, [Frank-Read source operation in six body-centered cubic refractory metals](http://dx.doi.org/10.1016/j.jmps.2020.104017), J. Mech. Phys. Solids 141 (2020) 104017
 
-PFDD was also extended to HCP crystals, for slips on basal, prismatic, and pyramidal-II planes:
+PFDD was also extended to HCP crystals, for slips on basal, prismatic-I, and pyramidal-II planes:
 
 - C. Albrecht, A. Hunter, A. Kumar, I.J. Beyerlein, [A phase field model for dislocations in hexagonal close packed crystals](https://doi.org/10.1016/j.jmps.2019.103823), J. Mech. Phys. Solids 137 (2020) 103823
 
-By Dec 2020, the PFDD model had not been used to study slips on pyramidal-I planes in HCP crystals, but doing so should be straightforward given the similarity between the pyramidal-I and pyramidal-II slips.
+As of March 2022, the PFDD model had not been used to study slips on pyramidal-I planes in HCP crystals, but doing so should be straightforward.
 
 ## (viii)
 
@@ -120,11 +128,7 @@ Then in 2011, 3D orthogonal numerical grids were used:
 
 - Lei Lei, Marisol Koslowski, [Mesoscale modeling of dislocations in molecular crystals](https://doi.org/10.1080/14786435.2010.533135), Philos. Mag. 91 (2011) 865--878
 
-which, however, studied a 2D problem. The first paper that used a 3D grid to study a 3D problem was:
-
-- A. Hunter, I.J. Beyerlein, [Stacking fault emission from grain boundaries: material dependencies and grain size effects](https://doi.org/10.1016/j.msea.2014.02.030), Mater. Sci. Eng.: A 600 (2014) 200--210
-
-In the two preceding papers (and many others that were not referenced here), slips were not confined to pre-defined slip planes in a 3D grid. 
+which studied a 3D problem. In the above paper (and many others that were not referenced here), slips were not confined to pre-defined slip planes in a 3D grid. 
 
 The first paper in which all slips were confined to pre-defined slip planes in PFDD was published in 2019:
 
@@ -142,12 +146,32 @@ In 2021, 3D non-orthogonal numerical grids were developed for FCC and BCC crysta
 
 - Xiaoyao Peng, Abigail Hunter, Irene J. Beyerlein, Ricardo A. Lebensohn, Kaushik Dayal, Enrique Martinez, [Non-orthogonal computational grids for studying dislocation motion in phase field approaches](https://doi.org/10.1016/j.commatsci.2021.110834), Comput. Mater. Sci. 200 (2021) 110834
 
+Such non-orthogonal grids made screw dislocation cross-slip possible:
+
+- Lauren T. W. Fey, Abigail Hunter, Irene J. Beyerlein, [Phase-field dislocation modeling of cross-slip](https://doi.org/10.1007/s10853-021-06716-1), J. Mater. Sci. (2022)
+
 ## Note
 
-Recent (as of Dec 2020) PFDD work combined several features mentioned above, e.g.,
+Recent PFDD work combined several features mentioned above, e.g.,
 
 - Lauren T.W. Smith, Yanqing Su, Shuozhi Xu, Abigail Hunter, Irene J. Beyerlein, [The effect of local chemical ordering on Frank-Read source activation in a refractory multi-principal element alloy](http://dx.doi.org/10.1016/j.ijplas.2020.102850), Int. J. Plast. 134 (2020) 102850
 
 which used features (i), (iv), (vii), and (viii).
 
-To sum up, it is always a good idea to use features (i) and (viii) in any PFDD work. Feature (iii) is highly recommended unless in the case of intensive high-throughput computing. Whether other features are used depends on the specific slip systems, material systems, and/or loading conditions.
+To sum up, it is always a good idea to use feature (i) in any PFDD work. Feature (iii) is highly recommended unless in the case of intensive high-throughput computing. Whether other features are used depends on the specific slip systems, material systems, and/or loading conditions.
+
+## Code development
+
+The PFDD code was parallelized in 2011:
+
+- Abigail Hunter, Faisal Saied, Chinh Le, Marisol Koslowski [Large-scale 3D phase field dislocation dynamics simulations on high-performance architectures](http://dx.doi.org/10.1177/1094342010382534), Int. J. High Perform. Comput. Appl. 25 (2011) 223-235
+
+and was then accelerated by GPU in 2018:
+
+- Adnan Eghtesad, Kai Germaschewski, Irene J. Beyerlein, Abigail Hunter, Marko Knezevic, [Graphics processing unit accelerated phase field dislocation dynamics: Application to bi-metallic interfaces](https://doi.org/10.1016/j.advengsoft.2017.09.010), Adv. Eng. Software 115 (2018) 248-267
+
+## Reference
+
+For the progress in the PFDD method between 2016 and early 2022, please read:
+
+- Shuozhi Xu, Recent progress in the phase-field dislocation dynamics method, Comput. Mater. Sci. (2022)
