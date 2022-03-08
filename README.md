@@ -172,6 +172,6 @@ and was then accelerated by GPU in 2018:
 
 ## Reference
 
-For the progress in the PFDD method between 2016 and early 2022, please read:
+For a more detailed report of the progress in the PFDD method between 2016 and early 2022, please read:
 
 - Shuozhi Xu, Recent progress in the phase-field dislocation dynamics method, Comput. Mater. Sci. (2022)
