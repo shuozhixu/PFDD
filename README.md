@@ -146,10 +146,6 @@ In 2021, 3D non-orthogonal numerical grids were developed for FCC and BCC crysta
 
 - Xiaoyao Peng, Abigail Hunter, Irene J. Beyerlein, Ricardo A. Lebensohn, Kaushik Dayal, Enrique Martinez, [Non-orthogonal computational grids for studying dislocation motion in phase field approaches](https://doi.org/10.1016/j.commatsci.2021.110834), Comput. Mater. Sci. 200 (2021) 110834
 
-Such non-orthogonal grids made screw dislocation cross-slip possible:
-
-- Lauren T. W. Fey, Abigail Hunter, Irene J. Beyerlein, [Phase-field dislocation modeling of cross-slip](https://doi.org/10.1007/s10853-021-06716-1), J. Mater. Sci. (2022)
-
 ## Note
 
 To sum up, it is always a good idea to use feature (i) in any PFDD work. Feature (iii) is highly recommended unless in the case of intensive high-throughput computing. Whether other features are used depends on the specific slip systems, material systems, and/or loading conditions.
@@ -158,11 +154,11 @@ To sum up, it is always a good idea to use feature (i) in any PFDD work. Feature
 
 The PFDD code was parallelized in 2011:
 
-- Abigail Hunter, Faisal Saied, Chinh Le, Marisol Koslowski [Large-scale 3D phase field dislocation dynamics simulations on high-performance architectures](http://dx.doi.org/10.1177/1094342010382534), Int. J. High Perform. Comput. Appl. 25 (2011) 223-235
+- Abigail Hunter, Faisal Saied, Chinh Le, Marisol Koslowski [Large-scale 3D phase field dislocation dynamics simulations on high-performance architectures](http://dx.doi.org/10.1177/1094342010382534), Int. J. High Perform. Comput. Appl. 25 (2011) 223--235
 
 and was then accelerated by GPU in 2018:
 
-- Adnan Eghtesad, Kai Germaschewski, Irene J. Beyerlein, Abigail Hunter, Marko Knezevic, [Graphics processing unit accelerated phase field dislocation dynamics: Application to bi-metallic interfaces](https://doi.org/10.1016/j.advengsoft.2017.09.010), Adv. Eng. Software 115 (2018) 248-267
+- Adnan Eghtesad, Kai Germaschewski, Irene J. Beyerlein, Abigail Hunter, Marko Knezevic, [Graphics processing unit accelerated phase field dislocation dynamics: Application to bi-metallic interfaces](https://doi.org/10.1016/j.advengsoft.2017.09.010), Adv. Eng. Software 115 (2018) 248--267
 
 ## Reference
 
