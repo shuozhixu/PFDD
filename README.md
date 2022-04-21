@@ -152,12 +152,6 @@ Such non-orthogonal grids made screw dislocation cross-slip possible:
 
 ## Note
 
-Recent PFDD work combined several features mentioned above, e.g.,
-
-- Lauren T.W. Smith, Yanqing Su, Shuozhi Xu, Abigail Hunter, Irene J. Beyerlein, [The effect of local chemical ordering on Frank-Read source activation in a refractory multi-principal element alloy](http://dx.doi.org/10.1016/j.ijplas.2020.102850), Int. J. Plast. 134 (2020) 102850
-
-which used features (i), (iv), (vii), and (viii).
-
 To sum up, it is always a good idea to use feature (i) in any PFDD work. Feature (iii) is highly recommended unless in the case of intensive high-throughput computing. Whether other features are used depends on the specific slip systems, material systems, and/or loading conditions.
 
 ## Code development
@@ -172,6 +166,6 @@ and was then accelerated by GPU in 2018:
 
 ## Reference
 
-For a more detailed report of the progress in the PFDD method between 2016 and early 2022, please read:
+For a more detailed report of the progress in the PFDD method up to March 2022, please read:
 
-- Shuozhi Xu, Recent progress in the phase-field dislocation dynamics method, Comput. Mater. Sci. (2022)
+- Shuozhi Xu, [Recent progress in the phase-field dislocation dynamics method](https://doi.org/10.1016/j.commatsci.2022.111419), Comput. Mater. Sci. 210 (2022) 111419
