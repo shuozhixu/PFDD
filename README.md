@@ -156,7 +156,7 @@ The PFDD code was parallelized in 2011:
 
 - Abigail Hunter, Faisal Saied, Chinh Le, Marisol Koslowski [Large-scale 3D phase field dislocation dynamics simulations on high-performance architectures](http://dx.doi.org/10.1177/1094342010382534), Int. J. High Perform. Comput. Appl. 25 (2011) 223--235
 
-and was then accelerated by GPU in 2018:
+and was accelerated by GPU in 2018:
 
 - Adnan Eghtesad, Kai Germaschewski, Irene J. Beyerlein, Abigail Hunter, Marko Knezevic, [Graphics processing unit accelerated phase field dislocation dynamics: Application to bi-metallic interfaces](https://doi.org/10.1016/j.advengsoft.2017.09.010), Adv. Eng. Software 115 (2018) 248--267
 
