@@ -30,13 +30,19 @@ Elastic heterogeneity was introduced to PFDD, for a void in 2013:
 
 - Lei Lei, Juan Luis Marin, Marisol Koslowski, [Phase-field modeling of defect nucleation and propagation in domains with material inhomogeneities](https://doi.org/10.1088/0965-0393/21/2/025009), Modelling Simul. Mater. Sci. Eng. 21 (2013) 025009
 
-and for a secondary material in 2016:
+and for bi-phase materials in 2016:
 
 - Yifei Zeng, Abigail Hunter, Irene Jane Beyerlein, Marisol Koslowski, [A phase field dislocation dynamics model for a bicrystal interface system: An investigation into dislocation slip transmission across cube-on-cube interfaces](https://doi.org/10.1016/j.ijplas.2015.09.001), Int. J. Plast. 79 (2016) 293--313
 
 Note that the two papers above did not address issues (i), (iii), or (v). In 2022, issues (i), (ii), and (iii) were addressed in the same model:
 
 - Shuozhi Xu, Justin Y. Cheng, Zezhou Li, Nathan A. Mara, Irene J. Beyerlein, [Phase-field modeling of the interactions between an edge dislocation and an array of obstacles](https://doi.org/10.1016/j.cma.2021.114426), Comput. Methods Appl. Mech. Eng. 389 (2022) 114426
+
+Also in 2022, the PFDD model was extended to multi-phase materials:
+
+- Shuozhi Xu, Justin Y. Cheng, Nathan A. Mara, Irene J. Beyerlein, [Dislocation dynamics in heterogeneous nanostructured materials](http://dx.doi.org/10.1016/j.jmps.2022.105031), J. Mech. Phys. Solids 168 (2022) 105031
+
+in which the issues (i), (iii), and (v) were also addressed.
 
 ## (iii)
 
@@ -50,7 +56,7 @@ Then in 2019, the lattice energy was advanced again such that it was based on th
 
 In the paper above, effects of the two GSFE surfaces were studied and it was recommended that the one not using a function is more desirable.
 
-The GSFE surface is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. For non-dissociated dislocations, e.g., those in BCC crystals and on non-basal planes in HCP crystals, GSFE curves should be used. In early PFDD models, the GSFE curve was approximated by a 1D function. That changed in 2020:
+The GSFE surface is used only for dissociated dislocations, e.g., those in FCC crystals and on basal planes in HCP crystals. For non-dissociated dislocations, e.g., those in BCC crystals and on some planes in HCP crystals, GSFE curves should be used. In early PFDD models, the GSFE curve was approximated by a 1D function. That changed in 2020:
 
 - Shuozhi Xu, Yanqing Su, Lauren T.W. Smith, Irene J. Beyerlein, [Frank-Read source operation in six body-centered cubic refractory metals](http://dx.doi.org/10.1016/j.jmps.2020.104017), J. Mech. Phys. Solids 141 (2020) 104017
 
@@ -62,6 +68,10 @@ In materials such as multi-principal element alloys, [the GSFE is not spatially 
 
 - Yifei Zeng, Xiaorong Cai, Marisol Koslowski, [Effects of the stacking fault energy fluctuations on the strengthening of alloys](https://doi.org/10.1016/j.actamat.2018.09.066), Acta Mater. 164 (2019) 1--11
 
+In 2022, a method was developed to generate lattice structures with given short-range order:
+
+- Lauren T. W. Fey, Irene J. Beyerlein, [Random generation of lattice structures with short-range order](https://doi.org/10.1007/s40192-022-00269-0), Integr. Mater. Manuf. Innov. 11 (2022) 382--390 
+
 The spatial variation in the lattice energy inevitably generated a large amount of data, leading to difficulties in relating the inputs and outputs analytically yet providing an opportunity to use machine learning:
 
 - Pau Cutrina Vilalta, Somayyeh Sheikholeslami, Katerine Saleme Ruiz, Xin C. Yee, Marisol Koslowski, [Machine learniing for predicting the critical yield stress of high entropy alloys](https://doi.org/10.1115/1.4048873), J. Eng. Mater. Tech. 143 (2021) 021005
@@ -71,6 +81,12 @@ In 2020, the feature of character angle-dependent lattice energy was added to PF
 - Xiaoyao Peng, Nithin Mathew, Irene J. Beyerlein, Kaushik Dayal, Abigail Hunter, [A 3D phase field dislocation dynamics model for body-centered cubic crystals](https://doi.org/10.1016/j.commatsci.2019.109217), Comput. Mater. Sci. 171 (2020) 109217
 
 The rational was that the Peierls stress differs greatly between edge and screw dislocations in BCC metals.
+
+In 2021, the lattice energy was extended to be a function of the applied shear stress and the angle between the maximum resolved shear stress plane and the glide plane:
+
+- Hyojung Kim, Nithin Mathew, Darby J. Luscher, Abigail Hunter, [Phase field dislocation dynamics (PFDD) modeling of non-Schmid behavior in BCC metals informed by atomistic simulations](https://doi.org/10.1016/j.jmps.2021.104460), J. Mech. Phys. Solids 152 (2021) 104460
+
+The purpose was to capture the non-Schmid effects in BCC metals.
 
 ## (v)
 
@@ -112,11 +128,15 @@ Soon after, PFDD was extended to {112} and {123} slips in BCC crystals:
 
 - Shuozhi Xu, Yanqing Su, Lauren T.W. Smith, Irene J. Beyerlein, [Frank-Read source operation in six body-centered cubic refractory metals](http://dx.doi.org/10.1016/j.jmps.2020.104017), J. Mech. Phys. Solids 141 (2020) 104017
 
+Then in 2022, PFDD was extended to {134} slips in BCC crystals:
+
+- Lauren T. W. Fey, Shuozhi Xu, Yanqing Su, Abigail Hunter, Irene J. Beyerlein, [Transitions in the morphology and critical stresses of gliding dislocations in multiprincipal element alloys](http://dx.doi.org/10.1103/PhysRevMaterials.6.013605), Phys. Rev. Mater. 6 (2022) 013605
+
 PFDD was also extended to HCP crystals, for slips on basal, prismatic-I, and pyramidal-II planes:
 
 - C. Albrecht, A. Hunter, A. Kumar, I.J. Beyerlein, [A phase field model for dislocations in hexagonal close packed crystals](https://doi.org/10.1016/j.jmps.2019.103823), J. Mech. Phys. Solids 137 (2020) 103823
 
-As of March 2022, the PFDD model had not been used to study slips on pyramidal-I planes in HCP crystals, but doing so should be straightforward.
+As of March 2023, the PFDD model had not been used to study slips on pyramidal-I planes in HCP crystals, but doing so should be straightforward.
 
 ## (viii)
 
